@@ -2,32 +2,18 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Ember Service Pattern</title>
-
   <link href="styles.css" media="screen" rel="stylesheet" type="text/css"/>
 
   <script src="lib/jquery-1.7.1.js" type="text/javascript"></script>
   <script src="lib/ember-0.9.5.js" type="text/javascript"></script>
-
   <script src="lib/app.js" type="text/javascript"></script>
-  <script src="lib/model.js" type="text/javascript"></script>
-  <script src="lib/view.js" type="text/javascript"></script>
-  <script src="lib/controller.js" type="text/javascript"></script>
-  <script src="lib/init.js" type="text/javascript"></script>
 </head>
 <body>
-  <div style="display:none;">
-  <h1>Ember Service Pattern</h1>
-  <h2>Background</h2>
-  <p>
-    You have a large code base and you don't want to hard-code global references to singleton services (i.e. controllers)
-    all over the place, because you've learned the hard way that loosely coupled components are a good thing.
-    So you make all your service objects be properties and reference the local properties in your code.
-    ...
-  </p>
-  </div>
   <script type="text/x-handlebars">
-    {{view App.View}}
+    <strong>Model Data</strong>
+    <p>{{view App.DataView}}</p>
+    {{view App.UpdateModelButton data1="Hello" data2="World"}}
+    {{view App.UpdateModelButton data1="something" data2="else"}}
   </script>
 </body>
 </html>

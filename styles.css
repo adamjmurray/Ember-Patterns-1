@@ -1,4 +1,6 @@
 .graybox {
-  background-color: #ddd;
+  background-color: #eee;
   border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 20px;
 }
